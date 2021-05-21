@@ -1,0 +1,32 @@
+CURRENT WEATHER (one call)
+
+https://api.openweathermap.org/data/2.5/onecall?lat=-30.0331&lon=-51.23&exclude=daily,hourly,minutely,alerts&units=metric&appid=b4d2a60b9952e3dd9e52a1f1196cabe6
+
+{
+"lat":-30.0331,
+"lon":-51.23,
+"timezone":"America/Sao_Paulo",
+"timezone_offset":-10800,
+"current":{"dt":1620824064,
+"sunrise":1620813666,
+"sunset":1620852093,
+"temp":11.98,
+"feels_like":11.66,
+"pressure":1022,
+"humidity":93,
+"dew_point":10.88,
+"uvi":2.16,
+"clouds":20,
+"visibility":10000,
+"wind_speed":3.09,
+"wind_deg":280,
+"weather":[
+{
+"id":801,
+"main":"Clouds",
+"description":"few clouds",
+"icon":"02d"
+}
+]
+}
+}

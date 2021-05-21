@@ -1,0 +1,53 @@
+CURRENT WEATHER (one call + daily)
+
+https://api.openweathermap.org/data/2.5/onecall?lat=-30.0331&lon=-51.23&exclude=hourly,minutely,alerts&units=metric&appid=b4d2a60b9952e3dd9e52a1f1196cabe6
+                              /data/2.5/onecall?lat=-30.0331&lon=-51.23&exclude=hourly,minutely,alerts&units=metric&appid=b4d2a60b9952e3dd9e52a1f1196cabe6 HTTP/1.1
+
+
+{
+"lat":-30.0331,
+"lon":-51.23,
+"timezone":"America/Sao_Paulo",
+"timezone_offset":-10800,
+"current":
+{"dt":1620825258,  //Wednesday, May 12, 2021 1:14:18 PM
+"sunrise":1620813666,
+"sunset":1620852093,
+"temp":12.64,
+"feels_like":12.1,
+"pressure":1022,
+"humidity":82,
+"dew_point":9.65,
+"uvi":2.16,
+"clouds":0,
+"visibility":10000,
+"wind_speed":2.57,
+"wind_deg":310,
+"weather":[
+{"id":800,
+"main":"Clear",
+"description":"clear sky",
+"icon":"01d"}]
+},
+"daily":[
+{"dt":1620831600 //Wednesday, May 12, 2021 3:00:00 PM,
+"sunrise":1620813666,
+"sunset":1620852093,
+"moonrise":1620815880,
+"moonset":1620854400,
+"moon_phase":0.03,
+"temp":{"day":14.38,"min":10.69,"max":17.6,"night":12.24,"eve":14.55,"morn":10.8},"feels_like":{"day":13.65,"night":9.95,"eve":13.6,"morn":9.95},"pressure":1022,"humidity":68,"dew_point":8.56,"wind_speed":2.1,"wind_deg":151,"wind_gust":3.44,"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":4.19},
+{"dt":1620918000, //Thursday, May 13, 2021 3:00:00 PM
+"sunrise":1620900105,"sunset":1620938455,"moonrise":1620905580,"moonset":1620943200,"moon_phase":0.06,"temp":{"day":17.99,"min":9.06,"max":19.45,"night":12.61,"eve":15.27,"morn":9.39},"feels_like":{"day":16.99,"night":8.96,"eve":14.37,"morn":8.96},"pressure":1024,"humidity":44,"dew_point":5.8,"wind_speed":2.4,"wind_deg":149,"wind_gust":5.12,"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":4.67},
+{"dt":1621004400, //Friday, May 14, 2021 3:00:00 PM
+"sunrise":1620986543,"sunset":1621024818,"moonrise":1620995280,"moonset":1621032240,"moon_phase":0.09,"temp":{"day":18.07,"min":10.25,"max":19.51,"night":13.25,"eve":15.78,"morn":10.44},"feels_like":{"day":17.06,"night":9.55,"eve":15.08,"morn":9.55},"pressure":1022,"humidity":43,"dew_point":5.52,"wind_speed":3.24,"wind_deg":147,"wind_gust":7.08,"weather":[{"id":804,"main":"Clouds","description":"overcast clouds","icon":"04d"}],"clouds":100,"pop":0,"uvi":4.23},
+{"dt":1621090800, //Saturday, May 15, 2021 3:00:00 PM
+"sunrise":1621072982,"sunset":1621111182,"moonrise":1621084920,"moonset":1621121580,"moon_phase":0.12,"temp":{"day":19.44,"min":11.23,"max":20.59,"night":15.65,"eve":16.56,"morn":11.23},"feels_like":{"day":18.8,"night":10.76,"eve":16.15,"morn":10.76},"pressure":1020,"humidity":52,"dew_point":9.55,"wind_speed":2.49,"wind_deg":165,"wind_gust":4.91,"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"clouds":0,"pop":0,"uvi":4.68},
+{"dt":1621177200,
+"sunrise":1621159420,"sunset":1621197548,"moonrise":1621174380,"moonset":1621211220,"moon_phase":0.15,"temp":{"day":19.64,"min":12.46,"max":20.37,"night":16.46,"eve":17.15,"morn":12.46},"feels_like":{"day":19.28,"night":12.24,"eve":16.93,"morn":12.24},"pressure":1019,"humidity":62,"dew_point":12.38,"wind_speed":2.5,"wind_deg":162,"wind_gust":4.49,"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"clouds":13,"pop":0,"uvi":1.04},
+{"dt":1621263600,
+"sunrise":1621245858,"sunset":1621283915,"moonrise":1621263600,"moonset":1621301040,"moon_phase":0.18,"temp":{"day":19,"min":13.82,"max":19.35,"night":14.8,"eve":16.08,"morn":13.82},"feels_like":{"day":18.5,"night":13.71,"eve":15.44,"morn":13.71},"pressure":1020,"humidity":59,"dew_point":10.9,"wind_speed":2.01,"wind_deg":166,"wind_gust":3.52,"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"clouds":16,"pop":0.04,"uvi":2},
+{"dt":1621350000,
+"sunrise":1621332295,"sunset":1621370283,"moonrise":1621352580,"moonset":1621391100,"moon_phase":0.21,"temp":{"day":18.97,"min":11.71,"max":19.96,"night":14.82,"eve":16.57,"morn":11.71},"feels_like":{"day":18.38,"night":11.31,"eve":15.88,"morn":11.31},"pressure":1019,"humidity":56,"dew_point":10.13,"wind_speed":1.95,"wind_deg":104,"wind_gust":4.07,"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"clouds":18,"pop":0,"uvi":2},
+{"dt":1621436400, //Wednesday, May 19, 2021 3:00:00 PM
+"sunrise":1621418733,"sunset":1621456652,"moonrise":1621441380,"moonset":0,"moon_phase":0.25,"temp":{"day":20.24,"min":11.98,"max":21.41,"night":15.69,"eve":17.39,"morn":11.98},"feels_like":{"day":19.55,"night":11.48,"eve":17.06,"morn":11.48},"pressure":1018,"humidity":47,"dew_point":8.74,"wind_speed":3,"wind_deg":112,"wind_gust":7.72,"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],"clouds":28,"pop":0,"uvi":2}]}
