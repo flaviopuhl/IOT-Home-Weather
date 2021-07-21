@@ -7,9 +7,9 @@ WiFi.begin(ssid, password);
   int wificount=0;
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    Serial.print(".");
+    Serial.print(F("."));
       if(wificount>=60){ ESP.restart(); } else { wificount++; }
 
     }
-    Serial.println(" CONNECTED");
+    Serial.println(F(" CONNECTED"));
 }

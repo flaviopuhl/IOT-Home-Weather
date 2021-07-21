@@ -4,13 +4,13 @@ void getWifiStatus(){
     wifiIP = ipToString(WiFi.localIP());      // Must be declared as global
     wifiRSSI = WiFi.RSSI();                   // Must be declared as global
     
-    Serial.println("");
-    Serial.println("############### Current WIFI ###############\n");
-    Serial.print("SSID             : "); Serial.println(wifiSSID);
-    Serial.print("IP               : "); Serial.println(wifiIP);
-    Serial.print("RSSI             : "); Serial.println(wifiRSSI);
-    Serial.print("Status           : "); Serial.println(wl_status_to_string(WiFi.status()));
-    Serial.println();
+    Serial.println(F(" "));
+    Serial.println(F("############### Current WIFI ###############\n"));
+    Serial.print(F("SSID             : ")); Serial.println(wifiSSID);
+    Serial.print(F("IP               : ")); Serial.println(wifiIP);
+    Serial.print(F("RSSI             : ")); Serial.println(wifiRSSI);
+    Serial.print(F("Status           : ")); Serial.println(wl_status_to_string(WiFi.status()));
+    Serial.println(F(" "));
 }    
 
     const char* wl_status_to_string(wl_status_t status) {
