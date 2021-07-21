@@ -8,8 +8,8 @@ void getIntTemp(){
     dtostrf(float_tempC, 2, 1, buff);  //2 is mininum width, 1 is precision
       string_tempC = buff;
       
-  Serial.println("");
-  Serial.println("################# INT Temp #################\n");
-  Serial.print("Internal Temp °C  : "); Serial.println(float_tempC);
+  Serial.println(F(" "));
+  Serial.println(F("################# INT Temp #################\n"));
+  Serial.print(F("Internal Temp °C  : ")); Serial.println(float_tempC);
   
 }

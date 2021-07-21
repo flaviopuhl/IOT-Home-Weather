@@ -29,12 +29,12 @@ void NPTrequest(){
 
   currentFullDate = currentDate +" "+currentTime;           // Must be declared as global                    
   
-  Serial.println("");
-  Serial.println("############### Current Time ###############\n");
-  Serial.print("Epoch Time        : "); Serial.println(epochTime);
-  Serial.print("Current Date      : ");  Serial.println(currentDate);
-  Serial.print("Current Time      : ");  Serial.println(currentTime);
-  Serial.print("Current Full Date : ");  Serial.println(currentFullDate);
+  Serial.println(F(" "));
+  Serial.println(F("############### Current Time ###############\n"));
+  Serial.print(F("Epoch Time        : ")); Serial.println(epochTime);
+  Serial.print(F("Current Date      : "));  Serial.println(currentDate);
+  Serial.print(F("Current Time      : "));  Serial.println(currentTime);
+  Serial.print(F("Current Full Date : "));  Serial.println(currentFullDate);
 
   if(currentYear<=2015){
     currentTime = "Failed to Update";
