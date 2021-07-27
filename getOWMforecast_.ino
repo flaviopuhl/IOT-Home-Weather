@@ -102,6 +102,7 @@ void getOWMforecast(){
           Serial.println("############### Current weather ###############\n");
             Current_temp = dtostrf(current->temp, 2, 1, buff);
             Current_feels_like = dtostrf(current->feels_like, 2, 0, buff);
+			
               Serial.print("dt (time)        : "); Serial.print(strTime(current->dt));
               Serial.print("temp             : "); Serial.println(Current_temp);
               Serial.print("feels_like       : "); Serial.println(Current_feels_like);
@@ -109,14 +110,18 @@ void getOWMforecast(){
           Serial.println("##############  Daily weather  1 ##############\n");
             Tomorrow_temp_min=dtostrf(daily->temp_min[1], 2, 1, buff);
             Tomorrow_temp_max=dtostrf(daily->temp_max[1], 2, 1, buff);
-              Serial.print("dt (time)        : "); Serial.print(strTime(daily->dt[1]));
+			      Tomorrow_dt=strTime(daily->dt[1]).substring(4, 10);
+			
+              Serial.print("dt (time)        : "); Serial.println(Tomorrow_dt);
               Serial.print("temp.min         : "); Serial.println(Tomorrow_temp_min);
               Serial.print("temp.max         : "); Serial.println(Tomorrow_temp_max);
       
           Serial.println("##############  Daily weather  2 ##############\n");
             DayAftTmw_temp_min=dtostrf(daily->temp_min[2], 2, 1, buff);    
             DayAftTmw_temp_max=dtostrf(daily->temp_max[2], 2, 1, buff);
-              Serial.print("dt (time)        : "); Serial.print(strTime(daily->dt[2]));
+            DayAftTmw_dt=strTime(daily->dt[2]).substring(4, 10);
+			
+              Serial.print("dt (time)        : "); Serial.print(DayAftTmw_dt);
               Serial.print("temp.min         : "); Serial.println(DayAftTmw_temp_min);
               Serial.print("temp.max         : "); Serial.println(DayAftTmw_temp_max);
       }

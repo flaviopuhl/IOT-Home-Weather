@@ -45,6 +45,7 @@ void getSWversion();
 void wifiConnect();  
 void getWifiStatus();
 void ThingerDefinitions();
+void NPTrequest();
 void getOWMforecast();
 void Screen_Actual();
 void Screen_TempInt();
@@ -88,9 +89,11 @@ unsigned long previousMillis;
 String Current_temp;                                          // OWM
 String Current_feels_like;
 
+String Tomorrow_dt;
 String Tomorrow_temp_min;
 String Tomorrow_temp_max;
 
+String DayAftTmw_dt; 
 String DayAftTmw_temp_min;     
 String DayAftTmw_temp_max;
 
@@ -179,7 +182,7 @@ void loop() {
     }
 
     
-    if (currentMillis - previousMillis3 >= 3000) {          // Screen Loop
+    if (currentMillis - previousMillis3 >= 4000) {          // Screen Loop
             previousMillis3 = currentMillis;
 
         displayCounter++;
@@ -191,10 +194,12 @@ void loop() {
     }
 
      if (currentMillis - previousMillis4 >= 1*60*1000) {   // periodical reset each 24h
-            previousMillis4 = currentMillis;               // save the last time temperature updated
+            previousMillis4 = currentMillis;               // 
                 if(resetCounter>=1440){ESP.reset();}
                 else {resetCounter++;}
+                  Serial.println(F("################ Reset Cnt #################\n"));
+                  Serial.print(F("Reset in          : ")); Serial.println(resetCounter);
 
-     }
+       }
 
 }
